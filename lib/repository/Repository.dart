@@ -1,0 +1,17 @@
+import 'dart:convert';
+import 'package:flutter/services.dart';
+import 'package:tela_dribble1/models/home_model.dart';
+
+class HomeRepository{
+
+  Future<List<HomeModel>> getHome() async{
+
+    final response = await rootBundle.loadString('assets/database/data.json');
+
+    final list = jsonDecode(response) as List;
+    final home = list.map((e) => HomeModel.fromMap(e)).toList();
+
+    return home;
+
+  }
+}
