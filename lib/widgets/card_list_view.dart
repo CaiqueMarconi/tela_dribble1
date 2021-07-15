@@ -4,12 +4,10 @@ class CardList extends StatelessWidget {
 
   final VoidCallback onTap;
   final String title;
-
-  CardList({this.onTap, this.title, this.subtitle, this.picture});
-
   final String subtitle;
   final String picture;
 
+  CardList({this.onTap, this.title, this.subtitle, this.picture});
 
 
   @override
@@ -39,8 +37,9 @@ class CardList extends StatelessWidget {
                 children: [
                   Text(title,
                   style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.w700),),
+                  SizedBox(height: 10,),
                   Text(subtitle,
-                    style: TextStyle(color: Colors.grey, fontSize: 15, fontWeight: FontWeight.w600),)
+                    style: TextStyle(color: Colors.grey, fontSize: 14, fontWeight: FontWeight.w600),)
                 ],
               ),
             ),
