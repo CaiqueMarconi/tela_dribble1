@@ -2,15 +2,7 @@
 
 A tela Dribble 1
 
-## Getting Started
+App copia de um layout encontrado no site dribble, desenvolvido com flutter e utilizando o package Responsive_Framework para responsividade das telas.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![tela1_dribble](https://user-images.githubusercontent.com/84547091/125866241-4a78fe8e-fdc1-4e8d-9e61-4876848b330d.png)
+![tela2_dribble](https://user-images.githubusercontent.com/84547091/125866250-3fe5199d-8c1e-4635-8bda-a9f492fe96a4.png)
