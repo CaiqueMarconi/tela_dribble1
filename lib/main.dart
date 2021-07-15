@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_framework/responsive_framework.dart';
 import 'package:tela_dribble1/tela_player.dart';
 import 'home_page.dart';
 
@@ -14,6 +15,15 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primaryColor: Color(0xffedf0f7)),
       home: HomePage(),
+      builder: (context, widget) => ResponsiveWrapper.builder(
+        ClampingScrollWrapper.builder(context, widget),
+        defaultScale: true,
+        minWidth: 400,
+        breakpoints: [
+          ResponsiveBreakpoint.autoScale(450,name: MOBILE),
+          ResponsiveBreakpoint.resize(830,name: MOBILE),
+        ]
+      ),
     );
   }
 }
